@@ -31,7 +31,6 @@ footer {
 	padding: 2em;
 }
 h1 {
-	font-family: 'Open Sans', sans-serif;
 	font-size: 2em;
     font-weight: bold;
 	color: #90be6d;
@@ -69,14 +68,29 @@ select {
     background-color: #222222;
     border: none;
     height: 5em;
-    width: 100%;
+    width: 90%;
     padding: 1em;
+    float: left;
+}
+button {
+    text-transform: uppercase;
+    border: none;
+    height: 5em;
+    width: 10%;
+    float: left;
+    background-color: #90be6d;
+    color: #ffffff;
+    cursor: pointer;
 }
 #result{
     width: 80%;
     padding: 1em;
     background: #111111;
     color: #ffffff;
+}
+#result .item {
+    float: left;
+    width: 128px;
 }
 #result table td {
     padding-right: 1em;

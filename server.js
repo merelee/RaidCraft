@@ -5,6 +5,7 @@ const bodyParser = require('body-parser'); // middleware
 const { check, validationResult } = require('express-validator');
 const app = express();
 const ejs = require('ejs')
+const mongodb = require('./mongodb.js')
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.set('view engine', 'ejs')
@@ -13,6 +14,15 @@ app.set('view engine', 'ejs')
 app.get('/', async (req, res) => {
     res.render('index', {
         
+    })
+})
+
+//result page
+mongodb().then(async (mongoose) => {
+    app.get('/', async (req, res) => {
+        res.render('result', {
+        
+        })
     })
 })
 
